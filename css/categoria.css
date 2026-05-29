@@ -1,0 +1,135 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  .add-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .form-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Centro el contenido en la página */
+  .menu {
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 50px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Estilos de navegación (ajustados para centrar) */
+  nav {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    max-width: 80%; /* Ajusta el porcentaje según desees */
+    height: auto;
+  }
+  
+  ul.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.menu li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Dropdown en la barra de navegación */
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  

@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(229,229,229, 1);
+}
+
+header {
+    background-color: #222020;
+    color: #ffffff;
+}
+
+nav {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+.slide {
+    background-image: url('../images/fndo.png');
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.slide-content {
+    margin: 0;
+    padding: 10px;
+}
+
+.about {
+    padding: 50px;
+    text-align: center;
+}
+
+.container {
+    background-color: #050505;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-6 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.col-6 img {
+    width: 584px;
+    height: 278px;
+    border-radius: 10px;
+    border: 5px solid #73ff00;
+}
+
+.telefono {
+    background-image: url('../images/telefono.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.telefono h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #33323f;
+
+}
+
+.portt {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.boxt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(229,229,229, 1);
+}
+
+.containert {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.containert .card {
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #ffffff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0,5);
+    transition: 0.3s ease-in-out;
+}
+.containert .card:hover {
+    height: 420px;
+}
+.containert .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0,5);
+}
+.containert .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+.containert .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.containert .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.portatil {
+    background-image: url('../images/portatil.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.portatil h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.hero-section{
+    --background-dark: #2d3548;
+    --text-light: rgba(255,255,255,0.6);
+    --text-lighter: rgba(255,255,255,0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+    align-items: flex-start;
+    background-image: radial-gradient(circle at 50% 50%, rgba(229,229,229, 1) 20%, rgba(229,229,229, 1));
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: var(--spacing-xxl) var(--spacing-l);
+  }
+  
+  .port-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--spacing-l);
+    grid-row-gap: var(--spacing-l);
+    max-width: var(--width-container);
+    width: 100%;
+  }
+  
+  @media(min-width: 540px){
+    .port-grid{
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media(min-width: 960px){
+    .port-grid{
+      grid-template-columns: repeat(4, 1fr); 
+    }
+  }
+  
+  .port{
+    list-style: none;
+    position: relative;
+  }
+  
+  .port:before{
+    content: '';
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  
+  .port__background{
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) 
+    saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center; transform: scale(1) translateZ(0);
+    transition: 
+      filter 200ms linear,
+      transform 200ms linear;
+  }
+  
+  .port:hover .port__background{
+    transform: scale(1.05) translateZ(0);
+  }
+  
+  .port-grid:hover > .port:not(:hover) .port__background{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+  }
+  
+  .port__content{
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+  }
+  
+  .port__category{
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+  }
+  
+  .port__heading{
+    color: var(--text-lighter);
+    font-size: 1.9rem;
+    text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    word-spacing: 100vw;
+  }
+
+  .componentes {
+    background-image: url('../images/componentes.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.componentes h1 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/pexels-eberhard-grossgasteiger-1421903.jpg);
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+    color: #030303;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)* 45deg)) translateZ(400px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer{
+    text-align: center;
+    color: #fff;
+    background-color: #333333;
+    font-size: 14px;
+    padding: 10px;
+}
+
+
