@@ -1,135 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deportes Total</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Novedades — E-Tech Haven</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/novedades.css">
 </head>
 
 <body>
+
+    <!-- ═══════ NAVBAR ═══════ -->
     <header>
-        <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="Logo">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="E-Tech Haven">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="novedades.html">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admin</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="admin-productos.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="admin-categorias.html">Categorías</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                </ul>
             </div>
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="novedadez.html">Novedades</a></li>
-                <li><a href="mostrar_productos.php">Productos</a></li>
-                <li><a href="carrito.php">Carrito</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Admin
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="productos.php">Productos</a></li>
-                        <li><a class="dropdown-item" href="categorias.php">Categorias</a></li>
-                    </ul>
-                </li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-            </ul>
         </nav>
     </header>
 
-    <section class="nove">
-        <div class="demo-description">
-            <h1 class="demo-description__title">Nuestros nuevos productos</h1>
-            <p class="demo-description__p">Lo mas nuevo en tegnologia.</p>
-        </div>
-
-        <div class="demo coursemeal">
-
-            <div class="coursemeal__div ">
-
-                <picture class="responsive-img">
-                    <img src="https://imageio.forbes.com/specials-images/imageserve/6378992ad0a595a2aa1a9f18/Apple--iPhone-15--iPhone-15-Ultra--iPhone-leak--new-iPhone--iPhone-14-upgrade-/960x0.png?height=416&width=711&fit=bounds"
-                        alt="">
-                </picture>
-
-                <div class="coursemeal-info">
-                    <a href="#" class="coursemeal-info__link">Iphone 15</a>
-                </div>
+    <!-- ═══════ PAGE HERO ═══════ -->
+    <section class="nove-hero">
+        <div class="nove-hero-grid"></div>
+        <div class="container position-relative" style="z-index:2;">
+            <div class="nove-eyebrow">
+                <span class="dot"></span>
+                Recién llegado
             </div>
-
-            <div class="coursemeal__div">
-
-                <picture class="responsive-img">
-                    <img src="https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_-featured-image-packshot-review.jpg"
-                        alt="">
-                </picture>
-
-                <div class="coursemeal-info">
-                    <a href="#" class="coursemeal-info__link">Samsung S23</a>
-                </div>
-            </div>
-
-            <div class="coursemeal__div">
-
-                <picture class="responsive-img">
-                    <img src="https://cdn.mos.cms.futurecdn.net/enBUWXzwJo6utHnx2QxjKU.jpg" alt="">
-                </picture>
-
-                <div class="coursemeal-info">
-                    <a href="#" class="coursemeal-info__link">HP Envy 14</a>
-                </div>
-            </div>
+            <h1 class="nove-title">Nuestros nuevos<br><em>productos</em></h1>
+            <p class="nove-sub">Lo más nuevo en tecnología, seleccionado para ti.</p>
         </div>
     </section>
-    <section class="ti">
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>Lo mas vendido</h2>
-    </section>
-    <section class="hero-section">
-        <div class="port-grid">
-            <a class="port" href="#">
-                <div class="port__background"
-                    style="background-image: url(https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-2up-purple-220907_inline.jpg.large.jpg)">
-                </div>
-                <div class="port__content">
-                    <h3 class="port__heading">iPhone 14</h3>
-                </div>
-            </a>
-            <a class="port" href="#">
-                <div class="port__background"
-                    style="background-image: url(https://i0.wp.com/www.tvsales.co.zw/wp-content/uploads/2023/01/samsung-A73.png?fit=900%2C900&ssl=1)">
-                </div>
-                <div class="port__content">
-                    <h3 class="port__heading">Samsung A73</h3>
-                </div>
-            </a>
-            <a class="port" href="#">
-                <div class="port__background"
-                    style="background-image: url(https://tienda.dell.com/cr/media/catalog/product/cache/2b88132ea045bae0fc2b44a4f558f9b1/i/n/in3511nt-cnb-05000ff090-bk-1280x1280.jpeg)">
-                </div>
-                <div class="port__content">
-                    <h3 class="port__heading">Laptop Inspiron 15</h3>
-                </div>
-                </li>
-                <a class="port" href="#">
-                    <div class="port__background"
-                        style="background-image: url(https://www.pny.com.tw/en/products-detail/upload/catalog_m/en_catalog_list_22h16_zj2mf2m8hg.jpg)">
+
+    <!-- ═══════ FEATURED 3-PANEL ═══════ -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="featured-grid">
+
+                <div class="featured-card">
+                    <div class="featured-card-img">
+                        <img src="https://imageio.forbes.com/specials-images/imageserve/6378992ad0a595a2aa1a9f18/Apple--iPhone-15--iPhone-15-Ultra--iPhone-leak--new-iPhone--iPhone-14-upgrade-/960x0.png?height=416&width=711&fit=bounds" alt="iPhone 15">
+                        <div class="featured-card-overlay">
+                            <span class="featured-card-tag">Nuevo</span>
+                        </div>
                     </div>
-                    <div class="port__content">
-                        <h3 class="port__heading">RTX 3069</h3>
+                    <div class="featured-card-body">
+                        <p class="featured-card-category">Smartphones · Apple</p>
+                        <h3 class="featured-card-name">iPhone 15</h3>
+                        <a href="#" class="featured-card-btn">Ver detalles</a>
                     </div>
-                </a>
-                <div>
+                </div>
+
+                <div class="featured-card featured-card--large">
+                    <div class="featured-card-img">
+                        <img src="https://cdn.dxomark.com/wp-content/uploads/medias/post-139011/Samsung-Galaxy-S23-Ultra_-featured-image-packshot-review.jpg" alt="Samsung S23 Ultra">
+                        <div class="featured-card-overlay">
+                            <span class="featured-card-tag">Destacado</span>
+                        </div>
+                    </div>
+                    <div class="featured-card-body">
+                        <p class="featured-card-category">Smartphones · Samsung</p>
+                        <h3 class="featured-card-name">Samsung S23 Ultra</h3>
+                        <a href="#" class="featured-card-btn">Ver detalles</a>
+                    </div>
+                </div>
+
+                <div class="featured-card">
+                    <div class="featured-card-img">
+                        <img src="https://cdn.mos.cms.futurecdn.net/enBUWXzwJo6utHnx2QxjKU.jpg" alt="HP Envy 14">
+                        <div class="featured-card-overlay">
+                            <span class="featured-card-tag">Nuevo</span>
+                        </div>
+                    </div>
+                    <div class="featured-card-body">
+                        <p class="featured-card-category">Laptops · HP</p>
+                        <h3 class="featured-card-name">HP Envy 14</h3>
+                        <a href="#" class="featured-card-btn">Ver detalles</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <footer class="footer">
-        <p>&#169; 2023 E-Tech Haven</p>
-        <p>Teléfono: (123) 456-7890</p>
-        <p>Email: info@etechhaven.com</p>
+    <!-- ═══════ BESTSELLERS BANNER ═══════ -->
+    <section class="bestseller-banner">
+        <div class="container">
+            <div class="row align-items-center reveal">
+                <div class="col-lg-8">
+                    <p class="section-label">Tendencias</p>
+                    <h2 class="section-title" style="color:#fff;">Lo más<br>vendido</h2>
+                    <p style="color:rgba(255,255,255,0.5);margin-top:.5rem;">Los productos que más eligen nuestros clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ BESTSELLER CARDS (HOVER GRID) ═══════ -->
+    <section class="bestseller-section">
+        <div class="port-grid-nove">
+
+            <a class="port-nove reveal" href="#">
+                <div class="port__background" style="background-image: url('https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-2up-purple-220907_inline.jpg.large.jpg')"></div>
+                <div class="port-nove-content">
+                    <p class="port-nove-cat">Apple</p>
+                    <h3 class="port-nove-name">iPhone 14</h3>
+                </div>
+            </a>
+
+            <a class="port-nove reveal" href="#">
+                <div class="port__background" style="background-image: url('https://i0.wp.com/www.tvsales.co.zw/wp-content/uploads/2023/01/samsung-A73.png?fit=900%2C900&ssl=1')"></div>
+                <div class="port-nove-content">
+                    <p class="port-nove-cat">Samsung</p>
+                    <h3 class="port-nove-name">Galaxy A73</h3>
+                </div>
+            </a>
+
+            <a class="port-nove reveal" href="#">
+                <div class="port__background" style="background-image: url('https://inteldeals.com/wp-content/uploads/2024/08/Dell-Inspiron15-3511-4.jpg')"></div>
+                <div class="port-nove-content">
+                    <p class="port-nove-cat">Dell</p>
+                    <h3 class="port-nove-name">Inspiron 15</h3>
+                </div>
+            </a>
+
+            <a class="port-nove reveal" href="#">
+                <div class="port__background" style="background-image: url('https://image.ceneostatic.pl/data/products/131804618/i-msi-geforce-rtx-3090-ti-black-trio-24gb-gddr6x.jpg')"></div>
+                <div class="port-nove-content">
+                    <p class="port-nove-cat">PNY</p>
+                    <h3 class="port-nove-name">RTX 3060</h3>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">E-Tech<span>Haven</span></div>
+                    <div class="footer-tagline">Tecnología para todos.</div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="mb-1 footer-nav-label">Navegación</p>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <a href="productos.html" class="footer-link">Productos</a>
+                        <a href="novedades.html" class="footer-link">Novedades</a>
+                        <a href="nosotros.html"  class="footer-link">Nosotros</a>
+                        <a href="carrito.html"   class="footer-link">Carrito</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="mb-1 footer-nav-label">Contacto</p>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <span class="footer-contact-info">(123) 456-7890</span>
+                        <span class="footer-contact-info">info@etechhaven.com</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2023 E-Tech Haven. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
+</body>
 </html>

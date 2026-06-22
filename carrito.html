@@ -4,196 +4,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito | E-Tech Haven</title>
+    <title>Carrito — E-Tech Haven</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/productos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrito.css">
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- ═══════ NAVBAR ═══════ -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-
+        <nav class="navbar navbar-expand-lg navbar-custom">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png"
-                    alt="Logo"
-                    width="80">
+                <img src="images/logo.png" alt="E-Tech Haven">
             </a>
-
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarMenu">
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse"
-                id="navbarMenu">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-                            Inicio
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="novedades.html">
-                            Novedades
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="productos.html">
-                            Productos
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active"
-                            href="carrito.html">
-                            Carrito
-                        </a>
-                    </li>
-
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="carrito.html">Carrito</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown">
-
-                            Admin
-                        </a>
-
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admin</a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item"
-                                    href="admin-productos.html">
-                                    Productos
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item"
-                                    href="admin-categorias.html">
-                                    Categorías
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="admin-productos.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="admin-categorias.html">Categorías</a></li>
                         </ul>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="nosotros.html">
-                            Nosotros
-                        </a>
-                    </li>
-
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Carrito -->
-    <div class="container mt-5">
-
-        <h2 class="mb-4">
-            Carrito de Compras
-        </h2>
-
-        <!-- Mensaje de compra -->
-        <div id="mensajeCompra"
-            class="alert alert-success d-none"
-            role="alert">
-
-            ¡Compra exitosa! Gracias por tu compra.
+    <!-- ═══════ PAGE HERO ═══════ -->
+    <section class="cart-hero">
+        <div class="cart-hero-grid"></div>
+        <div class="container position-relative" style="z-index:2;">
+            <div class="cart-eyebrow">
+                <span class="dot"></span>
+                Tu selección
+            </div>
+            <h1 class="cart-title">Carrito de<br><em>Compras</em></h1>
         </div>
+    </section>
 
-        <!-- Contenido carrito -->
-        <div id="contenidoCarrito">
+    <!-- ═══════ CART CONTENT ═══════ -->
+    <section class="cart-section">
+        <div class="container">
 
-            <table class="table table-bordered">
+            <!-- Success message (hidden by default) -->
+            <div id="mensajeCompra" class="cart-success d-none">
+                <div class="cart-success-icon">✓</div>
+                <h2 class="cart-success-title">¡Compra exitosa!</h2>
+                <p class="cart-success-sub">Gracias por tu compra. Pronto recibirás la confirmación por correo.</p>
+                <a href="productos.html" class="btn-cart-primary">Seguir comprando</a>
+            </div>
 
-                <thead class="table-light">
-                    <tr>
-                        <th>Producto</th>
-                        <th>Precio</th>
-                        <th>Cantidad</th>
-                    </tr>
-                </thead>
+            <!-- Cart content -->
+            <div id="contenidoCarrito">
+                <div class="row g-4 align-items-start">
 
-                <tbody>
-                    <tr>
-                        <td>Samsung Galaxy S21</td>
-                        <td>$899.99</td>
-                        <td>1</td>
-                    </tr>
+                    <!-- ── Items list ── -->
+                    <div class="col-lg-8">
+                        <div class="cart-card">
 
-                    <tr>
-                        <td>HP Spectre x360</td>
-                        <td>$1299.99</td>
-                        <td>1</td>
-                    </tr>
+                            <div class="cart-card-header">
+                                <h2 class="cart-card-title">Productos</h2>
+                                <span class="cart-item-count">3 artículos</span>
+                            </div>
 
-                    <tr>
-                        <td>Corsair Vengeance LPX 16GB</td>
-                        <td>$79.99</td>
-                        <td>2</td>
-                    </tr>
-                </tbody>
-            </table>
+                            <!-- Item 1 -->
+                            <div class="cart-item">
+                                <div class="cart-item-img">
+                                    <img src="images/S21.png" alt="Samsung Galaxy S21">
+                                </div>
+                                <div class="cart-item-info">
+                                    <p class="cart-item-cat">Samsung · Smartphone</p>
+                                    <h3 class="cart-item-name">Samsung Galaxy S21</h3>
+                                </div>
+                                <div class="cart-item-controls">
+                                    <div class="qty-control">
+                                        <button class="qty-btn qty-minus">−</button>
+                                        <span class="qty-value">1</span>
+                                        <button class="qty-btn qty-plus">+</button>
+                                    </div>
+                                    <div class="cart-item-price">$899.99</div>
+                                    <button class="cart-item-remove" title="Eliminar">✕</button>
+                                </div>
+                            </div>
 
-            <button id="btnCompra"
-                class="btn btn-success">
+                            <div class="cart-divider"></div>
 
-                Finalizar Compra
-            </button>
+                            <!-- Item 2 -->
+                            <div class="cart-item">
+                                <div class="cart-item-img">
+                                    <img src="images/HPSpectre.png" alt="HP Spectre x360">
+                                </div>
+                                <div class="cart-item-info">
+                                    <p class="cart-item-cat">HP · Laptop</p>
+                                    <h3 class="cart-item-name">HP Spectre x360</h3>
+                                </div>
+                                <div class="cart-item-controls">
+                                    <div class="qty-control">
+                                        <button class="qty-btn qty-minus">−</button>
+                                        <span class="qty-value">1</span>
+                                        <button class="qty-btn qty-plus">+</button>
+                                    </div>
+                                    <div class="cart-item-price">$1,299.99</div>
+                                    <button class="cart-item-remove" title="Eliminar">✕</button>
+                                </div>
+                            </div>
+
+                            <div class="cart-divider"></div>
+
+                            <!-- Item 3 -->
+                            <div class="cart-item">
+                                <div class="cart-item-img">
+                                    <img src="images/MemoriaRAMCorsair.png" alt="Corsair Vengeance LPX">
+                                </div>
+                                <div class="cart-item-info">
+                                    <p class="cart-item-cat">Corsair · Componente</p>
+                                    <h3 class="cart-item-name">Corsair Vengeance LPX 16GB</h3>
+                                </div>
+                                <div class="cart-item-controls">
+                                    <div class="qty-control">
+                                        <button class="qty-btn qty-minus">−</button>
+                                        <span class="qty-value">2</span>
+                                        <button class="qty-btn qty-plus">+</button>
+                                    </div>
+                                    <div class="cart-item-price">$159.98</div>
+                                    <button class="cart-item-remove" title="Eliminar">✕</button>
+                                </div>
+                            </div>
+
+                            <div class="cart-card-footer">
+                                <a href="productos.html" class="btn-cart-secondary">← Seguir comprando</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ── Order Summary ── -->
+                    <div class="col-lg-4">
+                        <div class="cart-summary">
+                            <h2 class="cart-summary-title">Resumen</h2>
+
+                            <div class="summary-row">
+                                <span>Subtotal</span>
+                                <span class="summary-value" id="subtotal">$2,359.96</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Envío</span>
+                                <span class="summary-value summary-free">Gratis</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Impuestos (13%)</span>
+                                <span class="summary-value" id="impuestos">$306.79</span>
+                            </div>
+
+                            <div class="summary-divider"></div>
+
+                            <div class="summary-row summary-total">
+                                <span>Total</span>
+                                <span id="total">$2,666.75</span>
+                            </div>
+
+                            <button id="btnCompra" class="btn-cart-primary btn-checkout">
+                                Finalizar Compra
+                            </button>
+
+                            <div class="summary-badges">
+                                <span class="summary-badge">🔒 Pago seguro</span>
+                                <span class="summary-badge">📦 Envío gratis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
+    </section>
 
-        <br>
-
-        <a href="productos.html"
-            class="btn btn-primary">
-
-            Continuar comprando
-        </a>
-
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer text-center mt-5 p-3">
-        <p>&copy; 2023 E-Tech Haven</p>
-        <p>Teléfono: (123) 456-7890</p>
-        <p>Email: info@etechhaven.com</p>
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">E-Tech<span>Haven</span></div>
+                    <div class="footer-tagline">Tecnología para todos.</div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="mb-1 footer-nav-label">Navegación</p>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <a href="productos.html" class="footer-link">Productos</a>
+                        <a href="novedades.html" class="footer-link">Novedades</a>
+                        <a href="nosotros.html"  class="footer-link">Nosotros</a>
+                        <a href="carrito.html"   class="footer-link">Carrito</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="mb-1 footer-nav-label">Contacto</p>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <span class="footer-contact-info">(123) 456-7890</span>
+                        <span class="footer-contact-info">info@etechhaven.com</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2023 E-Tech Haven. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Simulación compra -->
-    <script>
-        const btnCompra = document.getElementById('btnCompra');
-        const mensajeCompra = document.getElementById('mensajeCompra');
-        const contenidoCarrito = document.getElementById('contenidoCarrito');
-
-        btnCompra.addEventListener('click', () => {
-            contenidoCarrito.style.display = 'none';
-            mensajeCompra.classList.remove('d-none');
-        });
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/carrito.js"></script>
 
 </body>
-
 </html>

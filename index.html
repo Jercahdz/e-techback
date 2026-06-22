@@ -6,308 +6,335 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Tech Haven</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- ═══════ NAVBAR ═══════ -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-
-            <!-- Logo -->
+        <nav class="navbar navbar-expand-lg navbar-custom">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Logo" width="80">
+                <img src="images/logo.png" alt="E-Tech Haven">
             </a>
 
-            <!-- Responsive -->
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarMenu">
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- Menú -->
             <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ms-auto">
-
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            Inicio
-                        </a>
+                        <a class="nav-link" href="index.html">Inicio</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="novedades.html">
-                            Novedades
-                        </a>
+                        <a class="nav-link" href="novedades.html">Novedades</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.html">
-                            Productos
-                        </a>
+                        <a class="nav-link" href="productos.html">Productos</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="carrito.html">
-                            Carrito
-                        </a>
+                        <a class="nav-link" href="carrito.html">Carrito</a>
                     </li>
-
-                    <!-- Admin -->
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown">
-
-                            Admin
-                        </a>
-
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admin</a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item"
-                                    href="admin-productos.html">
-                                    Productos
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item"
-                                    href="admin-categorias.html">
-                                    Categorías
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="admin-productos.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="admin-categorias.html">Categorías</a></li>
                         </ul>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">
-                            Nosotros
-                        </a>
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
                     </li>
-
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="slide">
-        <div class="slide-content">
-            <h1>E-TECH HAVEN</h1>
+    <!-- ═══════ HERO ═══════ -->
+    <section class="hero">
+        <div class="hero-grid"></div>
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6 hero-content">
+                    <div class="hero-eyebrow">
+                        <span class="dot"></span>
+                        Tecnología de vanguardia
+                    </div>
+
+                    <h1>
+                        Tu próximo<br>
+                        equipo <em>ideal</em><br>
+                        está aquí
+                    </h1>
+
+                    <p class="hero-sub">
+                        Celulares, laptops y componentes de las mejores marcas del mundo.
+                        Calidad garantizada para profesionales y entusiastas.
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="productos.html" class="btn-hero-primary">Ver productos</a>
+                        <a href="novedades.html" class="btn-hero-secondary">Novedades</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <strong>500+</strong>
+                            <span>Productos</span>
+                        </div>
+                        <div class="hero-stat">
+                            <strong>30+</strong>
+                            <span>Marcas</span>
+                        </div>
+                        <div class="hero-stat">
+                            <strong>24/7</strong>
+                            <span>Soporte</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 hero-visual">
+                    <div class="hero-card-float">
+                        <div class="badge-label">Destacado del mes</div>
+                        <div class="product-name">Samsung Galaxy S24 Ultra</div>
+                        <div class="product-price"><small>$</small>1,199<small>.99</small></div>
+                        <div class="divider"></div>
+                        <div class="spec-row">
+                            <span class="label">Procesador</span>
+                            <span class="value">Snapdragon 8 Gen 3</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="label">RAM</span>
+                            <span class="value">12 GB</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="label">Cámara</span>
+                            <span class="value">200 MP</span>
+                        </div>
+                        <div class="spec-row">
+                            <span class="label">Batería</span>
+                            <span class="value">5,000 mAh</span>
+                        </div>
+                        <button class="btn-card">Agregar al carrito</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <!-- Nosotros -->
-    <section class="about">
-        <h2>¿Quiénes somos?</h2>
-        <br>
+    <!-- ═══════ ABOUT ═══════ -->
+    <section class="about-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
 
+                <div class="col-lg-6 reveal">
+                    <div class="about-tag">Quiénes somos</div>
+                    <h2 class="section-title">Apasionados por<br>la tecnología</h2>
+                    <div class="about-text">
+                        <p>
+                            Somos un apasionado grupo de estudiantes de Ingeniería en Sistemas de Computación
+                            de la Universidad Fidélitas, comprometidos con la excelencia en el mundo de la
+                            tecnología y la informática.
+                        </p>
+                        <p>
+                            Nuestra misión es explorar, aprender y aplicar conocimientos actualizados
+                            en informática y desarrollo web innovador.
+                        </p>
+                        <p>
+                            A través de nuestros proyectos, buscamos crear experiencias digitales
+                            funcionales, atractivas e interactivas para todos.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 reveal">
+                    <div class="about-img-wrap">
+                        <img src="images/gif.gif" alt="Tecnología en movimiento">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ PHONES BANNER ═══════ -->
+    <section class="phones-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 reveal">
+                    <h2>Lo último en<br><span>Celulares</span></h2>
+                    <p>Los smartphones más potentes del mercado, disponibles para ti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ PHONE CARDS ═══════ -->
+    <section class="phones-grid">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-md-4 reveal">
+                    <div class="phone-card">
+                        <img src="images/samsung.png" alt="Samsung" class="phone-card-img">
+                        <div class="phone-card-brand">Samsung</div>
+                        <p class="phone-card-desc">
+                            Dispositivos reconocidos por su diseño elegante, innovación tecnológica
+                            y pantallas de alta calidad. Opciones premium y accesibles.
+                        </p>
+                        <a href="productos.html" class="phone-card-btn">Ver modelos</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="phone-card">
+                        <img src="images/huawei.png" alt="Huawei" class="phone-card-img">
+                        <div class="phone-card-brand">Huawei</div>
+                        <p class="phone-card-desc">
+                            Teléfonos destacados por su innovación y enfoque en fotografía móvil
+                            con cámaras avanzadas de última generación.
+                        </p>
+                        <a href="productos.html" class="phone-card-btn">Ver modelos</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 reveal">
+                    <div class="phone-card">
+                        <img src="images/apple.png" alt="Apple" class="phone-card-img">
+                        <div class="phone-card-brand">Apple</div>
+                        <p class="phone-card-desc">
+                            Los iPhone son reconocidos por su diseño elegante, alto rendimiento
+                            y el ecosistema exclusivo de iOS.
+                        </p>
+                        <a href="productos.html" class="phone-card-btn">Ver modelos</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ LAPTOPS BANNER ═══════ -->
+    <section class="laptops-banner">
         <div class="container">
             <div class="row align-items-center">
+                <div class="col-lg-7 reveal">
+                    <h2>Las mejores<br>portátiles</h2>
+                    <p>Potencia y portabilidad en un solo equipo. Encuentra la laptop perfecta para tu trabajo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-md-6">
-                    <p>
-                        Somos un apasionado grupo de estudiantes de Ingeniería en Sistemas de Computación
-                        de la Universidad Fidélitas, comprometidos con la excelencia en el mundo de la
-                        tecnología y la informática.
-                    </p>
+    <!-- ═══════ BRAND CARDS (LAPTOPS) ═══════ -->
+    <section class="brands-section">
+        <div class="container">
+            <div class="row g-4">
 
-                    <p>
-                        Nuestra misión es explorar, aprender y aplicar conocimientos actualizados
-                        en informática y desarrollo web innovador.
-                    </p>
-
-                    <p>
-                        A través de nuestros proyectos, buscamos crear experiencias digitales
-                        funcionales, atractivas e interactivas.
-                    </p>
+                <div class="col-6 col-lg-3 reveal">
+                    <a href="productos.html" style="text-decoration:none;">
+                        <div class="brand-card">
+                            <img src="https://static.brusheezy.com/system/resources/previews/000/004/863/non_2x/hp-logo-photoshop-psds.jpg" alt="HP">
+                        </div>
+                    </a>
                 </div>
 
-                <div class="col-md-6 text-center">
-                    <img src="images/gif.gif"
-                        alt="Tecnología"
-                        class="img-fluid">
+                <div class="col-6 col-lg-3 reveal">
+                    <a href="productos.html" style="text-decoration:none;">
+                        <div class="brand-card">
+                            <img src="https://static.vecteezy.com/system/resources/previews/020/927/585/non_2x/lenovo-logo-brand-phone-symbol-name-white-design-china-mobile-illustration-with-black-background-free-vector.jpg" alt="Lenovo">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-3 reveal">
+                    <a href="productos.html" style="text-decoration:none;">
+                        <div class="brand-card">
+                            <img src="https://static.vecteezy.com/system/resources/previews/021/514/860/non_2x/dell-logo-brand-computer-symbol-white-design-usa-laptop-illustration-with-black-background-free-vector.jpg" alt="Dell">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-6 col-lg-3 reveal">
+                    <a href="productos.html" style="text-decoration:none;">
+                        <div class="brand-card">
+                            <img src="https://wallpaper.forfun.com/fetch/84/849cec15b51a7351ed511cea504463f7.jpeg" alt="Asus">
+                        </div>
+                    </a>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <!-- Celulares -->
-    <section>
-        <div class="telefono text-center">
-            <br><br>
-            <h1>Lo último en</h1>
-            <h1>Celulares</h1>
-        </div>
-    </section>
-
-    <section class="boxt">
-        <div class="containert">
-
-            <!-- Samsung -->
-            <div class="card">
-                <div class="imgBx">
-                    <img src="images/samsung.png" alt="Samsung">
-                </div>
-
-                <div class="content">
-                    <p>
-                        Dispositivos reconocidos por su diseño elegante,
-                        innovación tecnológica y pantallas de alta calidad.
-                    </p>
-
-                    <p>
-                        Samsung ofrece opciones premium y modelos accesibles
-                        para distintos usuarios.
-                    </p>
-                </div>
+    <!-- ═══════ COMPONENTS BANNER ═══════ -->
+    <section class="components-banner">
+        <div class="container">
+            <div class="reveal">
+                <h2>Lo último en<br><span>Componentes</span></h2>
+                <p>Arma o mejora tu PC con las piezas más potentes del mercado.</p>
             </div>
-
-            <!-- Huawei -->
-            <div class="card">
-                <div class="imgBx">
-                    <img src="images/huawei.png" alt="Huawei">
-                </div>
-
-                <div class="content">
-                    <p>
-                        Teléfonos destacados por su innovación y enfoque en
-                        fotografía móvil con cámaras avanzadas.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Apple -->
-            <div class="card">
-                <div class="imgBx">
-                    <img src="images/apple.png" alt="Apple">
-                </div>
-
-                <div class="content">
-                    <p>
-                        Los iPhone son reconocidos por su diseño elegante,
-                        alto rendimiento y el ecosistema exclusivo de iOS.
-                    </p>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <!-- Portátiles -->
-    <section>
-        <div class="portatil text-center">
-            <br><br>
-            <h1>Las mejores portátiles</h1>
-        </div>
-    </section>
-
-    <section class="hero-section">
-        <div class="port-grid">
-
-            <a class="port" href="#">
-                <div class="port__background"
-                    style="background-image: url('https://static.brusheezy.com/system/resources/previews/000/004/863/non_2x/hp-logo-photoshop-psds.jpg');">
-                </div>
-            </a>
-
-            <a class="port" href="#">
-                <div class="port__background"
-                    style="background-image: url('https://w0.peakpx.com/wallpaper/492/146/HD-wallpaper-lenovo-black-logo-black-n-white-lenovo-logo-lenovo-type-logo-white-logo.jpg');">
-                </div>
-            </a>
-
-            <a class="port" href="#">
-                <div class="port__background"
-                    style="background-image: url('https://i.dell.com/sites/csimages/App-Merchandizing_esupport_flatcontent_Images/all/dell-logo-screen.png');">
-                </div>
-            </a>
-
-            <a class="port" href="#">
-                <div class="port__background"
-                    style="background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1a00b67a-b94a-48a9-9a35-ba46993c0dc3/d21wttr-677eedcc-be12-4f4b-8947-de6a62394915.png');">
-                </div>
-            </a>
-
-        </div>
-    </section>
-
-    <!-- Componentes -->
-    <section>
-        <div class="componentes text-center">
-            <br><br>
-            <h1>Lo último en</h1>
-            <h1>Componentes</h1>
-        </div>
-    </section>
-
-    <section class="galeria">
-
+    <!-- ═══════ 3D GALLERY ═══════ -->
+    <section class="gallery-section">
+        <h3>Componentes destacados</h3>
         <div class="box">
-
-            <span style="--i:1;">
-                <img src="https://i0.wp.com/i.ibb.co/CH8rZbj/AMD-RYZEN-5-4500-WITH-WRAITH-STEALTH-CO-3-RD-3-6-GHZ.jpg"
-                    alt="Procesador">
-            </span>
-
-            <span style="--i:2;">
-                <img src="https://i2.wp.com/i.ibb.co/1z81qj5/Nz-U4-Y2-Rl-OD-1000x1000-1.jpg"
-                    alt="Componente">
-            </span>
-
-            <span style="--i:3;">
-                <img src="https://i2.wp.com/i.ibb.co/x3hm78x/HD-INTERNO-1-TB-3-5-WD-BLUE-WD10-EZEX.webp"
-                    alt="Disco duro">
-            </span>
-
-            <span style="--i:4;">
-                <img src="https://i2.wp.com/i.ibb.co/m4nKQhn/71-KNva9w-Gu-L-AC-UL600-SR600-600-1.jpg"
-                    alt="Hardware">
-            </span>
-
-            <span style="--i:5;">
-                <img src="https://i2.wp.com/i.ibb.co/L0ymPcN/ee4519755284197fb566e19645b4f3e0.jpg"
-                    alt="Componente PC">
-            </span>
-
-            <span style="--i:6;">
-                <img src="https://i0.wp.com/i.ibb.co/HzF9gcS/patriot-memoria-ram-viper-steel-cl18-64gb-2x32gb-ddr4-3200mhz.jpg"
-                    alt="RAM">
-            </span>
-
-            <span style="--i:7;">
-                <img src="https://www.techzilla.cr/wp-content/uploads/2023/01/TV0981.jpg"
-                    alt="GPU">
-            </span>
-
-            <span style="--i:8;">
-                <img src="https://i2.wp.com/i.ibb.co/2508fSc/FUENTE-DE-PODER-COOLER-MASTER-GOLG-700-W-80-GOLD-ATX.webp"
-                    alt="Fuente de poder">
-            </span>
-
+            <span style="--i:1;"><img src="https://i0.wp.com/i.ibb.co/CH8rZbj/AMD-RYZEN-5-4500-WITH-WRAITH-STEALTH-CO-3-RD-3-6-GHZ.jpg" alt="Procesador AMD"></span>
+            <span style="--i:2;"><img src="https://i2.wp.com/i.ibb.co/1z81qj5/Nz-U4-Y2-Rl-OD-1000x1000-1.jpg" alt="Componente"></span>
+            <span style="--i:3;"><img src="https://i2.wp.com/i.ibb.co/x3hm78x/HD-INTERNO-1-TB-3-5-WD-BLUE-WD10-EZEX.webp" alt="Disco duro WD"></span>
+            <span style="--i:4;"><img src="https://i2.wp.com/i.ibb.co/m4nKQhn/71-KNva9w-Gu-L-AC-UL600-SR600-600-1.jpg" alt="Hardware"></span>
+            <span style="--i:5;"><img src="https://i2.wp.com/i.ibb.co/L0ymPcN/ee4519755284197fb566e19645b4f3e0.jpg" alt="Componente PC"></span>
+            <span style="--i:6;"><img src="https://i0.wp.com/i.ibb.co/HzF9gcS/patriot-memoria-ram-viper-steel-cl18-64gb-2x32gb-ddr4-3200mhz.jpg" alt="RAM Patriot"></span>
+            <span style="--i:7;"><img src="https://www.hellotech.com/blog/wp-content/uploads/2020/02/what-is-a-gpu-770x462.jpg" alt="GPU"></span>
+            <span style="--i:8;"><img src="https://i2.wp.com/i.ibb.co/2508fSc/FUENTE-DE-PODER-COOLER-MASTER-GOLG-700-W-80-GOLD-ATX.webp" alt="Fuente de poder"></span>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer text-center mt-5 p-3">
-        <p>&copy; 2023 E-Tech Haven</p>
-        <p>Teléfono: (123) 456-7890</p>
-        <p>Email: info@etechhaven.com</p>
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4">
+
+                <div class="col-lg-4">
+                    <div class="footer-brand">E-Tech<span>Haven</span></div>
+                    <div class="footer-tagline">Tecnología para todos.</div>
+                </div>
+
+                <div class="col-lg-4">
+                    <p class="mb-1 footer-nav-label">Navegación</p>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <a href="productos.html" class="footer-link">Productos</a>
+                        <a href="novedades.html" class="footer-link">Novedades</a>
+                        <a href="nosotros.html"  class="footer-link">Nosotros</a>
+                        <a href="carrito.html"   class="footer-link">Carrito</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <p class="mb-1 footer-nav-label">Contacto</p>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <span class="footer-contact-info">(123) 456-7890</span>
+                        <span class="footer-contact-info">info@etechhaven.com</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2023 E-Tech Haven. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 

@@ -7,7 +7,7 @@ body{
 	background-color: #1f2029;
   overflow: hidden;
   height: 100vh;
-  background: radial-gradient(ellipse at bottom, #1B2735 0%, #12141d 100%);
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #185FA5 100%);
 }
 a:hover {
 	text-decoration: none;
@@ -62,7 +62,7 @@ display: none;
   height: 36px;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #020305;
+  background-color: #0F1623;
   font-family: 'unicons';
   content: '\eb4f';
   z-index: 20;
@@ -97,7 +97,7 @@ display: none;
 .card-front, .card-back {
   width: 100%;
   height: 100%;
-  background-color: #2b2e38;
+  background-color: #0F1623;
   background-image: url('/img/pattern_japanese-pattern-2_1_2_0-0_0_1__ffffff00_000000.png');
   position: absolute;
   border-radius: 6px;

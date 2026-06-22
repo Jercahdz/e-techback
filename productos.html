@@ -4,347 +4,276 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos | E-Tech Haven</title>
+    <title>Productos — E-Tech Haven</title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-        rel="stylesheet">
-
-    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/productos.css">
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- ═══════ NAVBAR ═══════ -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light px-4">
-
+        <nav class="navbar navbar-expand-lg navbar-custom">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png"
-                    alt="Logo"
-                    width="80">
+                <img src="images/logo.png" alt="E-Tech Haven">
             </a>
-
-            <button class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarMenu">
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse"
-                id="navbarMenu">
-
-                <ul class="navbar-nav ms-auto">
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="index.html">
-                            Inicio
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="novedades.html">
-                            Novedades
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active"
-                            href="productos.html">
-                            Productos
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="carrito.html">
-                            Carrito
-                        </a>
-                    </li>
-
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown">
-
-                            Admin
-                        </a>
-
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Admin</a>
                         <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item"
-                                    href="admin-productos.html">
-                                    Productos
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item"
-                                    href="admin-categorias.html">
-                                    Categorías
-                                </a>
-                            </li>
+                            <li><a class="dropdown-item" href="admin-productos.html">Productos</a></li>
+                            <li><a class="dropdown-item" href="admin-categorias.html">Categorías</a></li>
                         </ul>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link"
-                            href="nosotros.html">
-                            Nosotros
-                        </a>
-                    </li>
-
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <!-- Productos -->
-    <div class="container mt-5">
-
-        <h2 class="text-center mb-5">
-            Nuestros Productos
-        </h2>
-
-        <div class="row">
-
-            <!-- Samsung Galaxy S21 -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-
-                    <img src="images/S21.png"
-                        class="card-img-top"
-                        alt="Samsung Galaxy S21">
-
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Samsung Galaxy S21
-                        </h5>
-
-                        <p class="card-text">
-                            El Samsung Galaxy S21 es un teléfono inteligente
-                            de gama alta con potentes capacidades fotográficas,
-                            pantalla vibrante y rendimiento excepcional.
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Precio:</strong> $899.99
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Disponibles:</strong> 10
-                        </p>
-                    </div>
-
-                    <div class="card-footer text-center">
-                        <button class="btn btn-primary">
-                            Agregar al carrito
-                        </button>
-                    </div>
-
-                </div>
+    <!-- ═══════ PAGE HERO ═══════ -->
+    <section class="prod-hero">
+        <div class="prod-hero-grid"></div>
+        <div class="container position-relative" style="z-index:2;">
+            <div class="prod-eyebrow">
+                <span class="dot"></span>
+                Catálogo completo
             </div>
+            <h1 class="prod-title">Nuestros<br><em>Productos</em></h1>
+            <p class="prod-sub">Tecnología de las mejores marcas, disponible para ti.</p>
+        </div>
+    </section>
 
-            <!-- iPhone 12 -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-
-                    <img src="images/Iphone12.png"
-                        class="card-img-top"
-                        alt="iPhone 12">
-
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            iPhone 12
-                        </h5>
-
-                        <p class="card-text">
-                            El iPhone 12 destaca por su potente chip
-                            A14 Bionic, pantalla Super Retina XDR
-                            y sistema de cámara avanzado.
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Precio:</strong> $999.99
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Disponibles:</strong> 12
-                        </p>
-                    </div>
-
-                    <div class="card-footer text-center">
-                        <button class="btn btn-primary">
-                            Agregar al carrito
-                        </button>
-                    </div>
-
+    <!-- ═══════ FILTER BAR ═══════ -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-inner">
+                <div class="filter-tabs">
+                    <button class="filter-tab active" data-cat="todos">Todos</button>
+                    <button class="filter-tab" data-cat="smartphone">Smartphones</button>
+                    <button class="filter-tab" data-cat="laptop">Laptops</button>
+                    <button class="filter-tab" data-cat="componente">Componentes</button>
                 </div>
+                <div class="prod-count">6 productos</div>
             </div>
-
-            <!-- HP Spectre -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-
-                    <img src="images/HPSpectre.png"
-                        class="card-img-top"
-                        alt="HP Spectre x360">
-
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            HP Spectre x360
-                        </h5>
-
-                        <p class="card-text">
-                            Portátil premium 2 en 1 con diseño elegante,
-                            pantalla táctil y alto rendimiento.
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Precio:</strong> $1299.99
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Disponibles:</strong> 5
-                        </p>
-                    </div>
-
-                    <div class="card-footer text-center">
-                        <button class="btn btn-primary">
-                            Agregar al carrito
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Dell XPS 13 -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-
-                    <img src="images/DellX.png"
-                        class="card-img-top"
-                        alt="Dell XPS 13">
-
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Dell XPS 13
-                        </h5>
-
-                        <p class="card-text">
-                            Diseño ultradelgado, pantalla InfinityEdge
-                            y rendimiento potente ideal para usuarios exigentes.
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Precio:</strong> $1399.99
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Disponibles:</strong> 6
-                        </p>
-                    </div>
-
-                    <div class="card-footer text-center">
-                        <button class="btn btn-primary">
-                            Agregar al carrito
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- RTX 3080 -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-
-                    <img src="images/TarjetaNVIDIA.png"
-                        class="card-img-top"
-                        alt="RTX 3080">
-
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            NVIDIA GeForce RTX 3080
-                        </h5>
-
-                        <p class="card-text">
-                            Tarjeta gráfica de alto rendimiento
-                            para gaming y aplicaciones intensivas.
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Precio:</strong> $699.99
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Disponibles:</strong> 8
-                        </p>
-                    </div>
-
-                    <div class="card-footer text-center">
-                        <button class="btn btn-primary">
-                            Agregar al carrito
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- RAM Corsair -->
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-
-                    <img src="images/MemoriaRAMCorsair.png"
-                        class="card-img-top"
-                        alt="Memoria RAM Corsair">
-
-                    <div class="card-body">
-                        <h5 class="card-title">
-                            Corsair Vengeance LPX 16GB
-                        </h5>
-
-                        <p class="card-text">
-                            Memoria RAM rápida y confiable,
-                            ideal para mejorar el rendimiento del sistema.
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Precio:</strong> $79.99
-                        </p>
-
-                        <p class="card-text">
-                            <strong>Disponibles:</strong> 20
-                        </p>
-                    </div>
-
-                    <div class="card-footer text-center">
-                        <button class="btn btn-primary">
-                            Agregar al carrito
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-
         </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer text-center mt-5 p-3">
-        <p>&copy; 2023 E-Tech Haven</p>
-        <p>Teléfono: (123) 456-7890</p>
-        <p>Email: info@etechhaven.com</p>
+    <!-- ═══════ PRODUCT GRID ═══════ -->
+    <section class="products-section">
+        <div class="container">
+            <div class="row g-4" id="productsGrid">
+
+                <!-- Samsung Galaxy S21 -->
+                <div class="col-md-6 col-lg-4 prod-col" data-cat="smartphone">
+                    <div class="prod-card">
+                        <div class="prod-card-img">
+                            <img src="images/S21.png" alt="Samsung Galaxy S21">
+                            <span class="prod-badge">Smartphone</span>
+                        </div>
+                        <div class="prod-card-body">
+                            <h3 class="prod-card-name">Samsung Galaxy S21</h3>
+                            <p class="prod-card-desc">
+                                Teléfono de gama alta con potentes capacidades fotográficas,
+                                pantalla vibrante y rendimiento excepcional.
+                            </p>
+                            <div class="prod-card-footer">
+                                <div>
+                                    <div class="prod-card-price">$899.99</div>
+                                    <div class="prod-card-stock">
+                                        <span class="stock-dot"></span>
+                                        10 disponibles
+                                    </div>
+                                </div>
+                                <button class="prod-card-btn">+ Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- iPhone 12 -->
+                <div class="col-md-6 col-lg-4 prod-col" data-cat="smartphone">
+                    <div class="prod-card">
+                        <div class="prod-card-img">
+                            <img src="images/Iphone12.png" alt="iPhone 12">
+                            <span class="prod-badge">Smartphone</span>
+                        </div>
+                        <div class="prod-card-body">
+                            <h3 class="prod-card-name">iPhone 12</h3>
+                            <p class="prod-card-desc">
+                                Potente chip A14 Bionic, pantalla Super Retina XDR
+                                y sistema de cámara avanzado de Apple.
+                            </p>
+                            <div class="prod-card-footer">
+                                <div>
+                                    <div class="prod-card-price">$999.99</div>
+                                    <div class="prod-card-stock">
+                                        <span class="stock-dot"></span>
+                                        12 disponibles
+                                    </div>
+                                </div>
+                                <button class="prod-card-btn">+ Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HP Spectre -->
+                <div class="col-md-6 col-lg-4 prod-col" data-cat="laptop">
+                    <div class="prod-card">
+                        <div class="prod-card-img">
+                            <img src="images/HPSpectre.png" alt="HP Spectre x360">
+                            <span class="prod-badge prod-badge--laptop">Laptop</span>
+                        </div>
+                        <div class="prod-card-body">
+                            <h3 class="prod-card-name">HP Spectre x360</h3>
+                            <p class="prod-card-desc">
+                                Portátil premium 2 en 1 con diseño elegante,
+                                pantalla táctil y alto rendimiento.
+                            </p>
+                            <div class="prod-card-footer">
+                                <div>
+                                    <div class="prod-card-price">$1,299.99</div>
+                                    <div class="prod-card-stock">
+                                        <span class="stock-dot stock-dot--low"></span>
+                                        5 disponibles
+                                    </div>
+                                </div>
+                                <button class="prod-card-btn">+ Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dell XPS 13 -->
+                <div class="col-md-6 col-lg-4 prod-col" data-cat="laptop">
+                    <div class="prod-card">
+                        <div class="prod-card-img">
+                            <img src="images/DellX.png" alt="Dell XPS 13">
+                            <span class="prod-badge prod-badge--laptop">Laptop</span>
+                        </div>
+                        <div class="prod-card-body">
+                            <h3 class="prod-card-name">Dell XPS 13</h3>
+                            <p class="prod-card-desc">
+                                Diseño ultradelgado, pantalla InfinityEdge
+                                y rendimiento potente para usuarios exigentes.
+                            </p>
+                            <div class="prod-card-footer">
+                                <div>
+                                    <div class="prod-card-price">$1,399.99</div>
+                                    <div class="prod-card-stock">
+                                        <span class="stock-dot stock-dot--low"></span>
+                                        6 disponibles
+                                    </div>
+                                </div>
+                                <button class="prod-card-btn">+ Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RTX 3080 -->
+                <div class="col-md-6 col-lg-4 prod-col" data-cat="componente">
+                    <div class="prod-card">
+                        <div class="prod-card-img">
+                            <img src="images/TarjetaNVIDIA.png" alt="RTX 3080">
+                            <span class="prod-badge prod-badge--comp">Componente</span>
+                        </div>
+                        <div class="prod-card-body">
+                            <h3 class="prod-card-name">NVIDIA RTX 3080</h3>
+                            <p class="prod-card-desc">
+                                Tarjeta gráfica de alto rendimiento
+                                para gaming y aplicaciones intensivas.
+                            </p>
+                            <div class="prod-card-footer">
+                                <div>
+                                    <div class="prod-card-price">$699.99</div>
+                                    <div class="prod-card-stock">
+                                        <span class="stock-dot"></span>
+                                        8 disponibles
+                                    </div>
+                                </div>
+                                <button class="prod-card-btn">+ Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RAM Corsair -->
+                <div class="col-md-6 col-lg-4 prod-col" data-cat="componente">
+                    <div class="prod-card">
+                        <div class="prod-card-img">
+                            <img src="images/MemoriaRAMCorsair.png" alt="Corsair Vengeance LPX">
+                            <span class="prod-badge prod-badge--comp">Componente</span>
+                        </div>
+                        <div class="prod-card-body">
+                            <h3 class="prod-card-name">Corsair Vengeance LPX 16GB</h3>
+                            <p class="prod-card-desc">
+                                Memoria RAM rápida y confiable,
+                                ideal para mejorar el rendimiento del sistema.
+                            </p>
+                            <div class="prod-card-footer">
+                                <div>
+                                    <div class="prod-card-price">$79.99</div>
+                                    <div class="prod-card-stock">
+                                        <span class="stock-dot"></span>
+                                        20 disponibles
+                                    </div>
+                                </div>
+                                <button class="prod-card-btn">+ Carrito</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════ FOOTER ═══════ -->
+    <footer class="footer-custom">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="footer-brand">E-Tech<span>Haven</span></div>
+                    <div class="footer-tagline">Tecnología para todos.</div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="mb-1 footer-nav-label">Navegación</p>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <a href="productos.html" class="footer-link">Productos</a>
+                        <a href="novedades.html" class="footer-link">Novedades</a>
+                        <a href="nosotros.html"  class="footer-link">Nosotros</a>
+                        <a href="carrito.html"   class="footer-link">Carrito</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <p class="mb-1 footer-nav-label">Contacto</p>
+                    <div class="d-flex flex-column gap-2 mt-2">
+                        <span class="footer-contact-info">(123) 456-7890</span>
+                        <span class="footer-contact-info">info@etechhaven.com</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <p class="footer-copy text-center">&copy; 2023 E-Tech Haven. Todos los derechos reservados.</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/productos.js"></script>
 
 </body>
-
 </html>
